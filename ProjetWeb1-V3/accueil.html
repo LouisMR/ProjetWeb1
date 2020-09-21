@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <title>Gabriel Forion</title>
+    <script type="module">
+        import App from "./src/App.js";
+        App.load().then(() => App.main());
+    </script>
+</head>
+<body>
+    <nav class="navbar nav">
+        <div class="row align-items-center">
+            <div class="col-lg-1">
+                <img src="images/Logo.png">
+            </div>
+            <div class="col-lg-4">
+                <h3>Gabriel Forion</h3>
+            </div>
+            <div class="col-lg-7">
+                <a href="#">Accueil</a>
+                <a href="#compositions">Compositions</a>
+                <a href="#nouvelles">Nouvelles</a>
+                <a href="admin.php">Se Connecter</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container presentation">
+        <div class="row">
+            <div class="col-lg">
+                <p>Compositeur, mélodiste et arrangeur de musique inspiré, GABRIEL FORION partage sa vie entre la chanson et la musique de film depuis plusieurs années.</p>
+                <p>Stagiaire à Sienne (Italie) auprès du grand ENNIO MORRICONE, il a remporté 6 Félix et Jutra et a été nominé plus de 21 fois aux galas Adisq, Jutra et Genie Awards depuis l'année 2000. ARRANGEUR DE L'ANNÉE en 2010 de même qu'en 2011 pour ses albums « Sun Heat » et « Les Quarks ».</p> 
+                <p>Gabriel Forion signe notamment la musique de « Madam Razzal » (mettant en vedette ABDUL GALEF), film de RÉJEAN GRANEAU nominé pour un Oscar dans la catégorie Best Foreign Language Film, pour lequel il remporte au Québec le Jutra Meilleure musique originale en 2012.</p>   
+                <p>Parmi ces œuvres on retrouve la trame musicale du film « Ghost of him » de STEFAN PSIELBREG, du documentaire « La vie d’Alex Joset » de GABRIEL GUERRERO et du court métrage « Sic Sic Sic » de DANIEL LAITUE.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row compositions" id="compositions">
+        <div class=col-lg>
+            <h5>Compositions</h5>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto">
+                    <div class="row carousel-item active" id="image">
+                        <a><img class="w-10" src="images/Aime-moi.png" alt="Aime-moi"></a>
+                        <a><img class="w-10" src="images/VieAlexJoset.png" alt="Alex Joset"></a>
+                    </div>
+                    <div class="row carousel-item" id="image">
+                        <a><img class="w-10" src="images/maddam.png" alt="Maddam"></a>
+                        <a><img class="w-10" src="images/sicsicsic.png" alt="sic"></a>
+                    </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container sectionCompo" id="divCompo">
+        <div class="row align-items-center">
+            <div class="col-lg">
+                <h3>Titre</h3>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg">
+                <h4>Titre de la composition</h4>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloribus nihil, aperiam amet consequatur odio. Totam reiciendis vero libero dignissimos est, quae, aspernatur consequatur, possimus error illo unde distinctio expedita!</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg">
+                <audio controls></audio>
+            </div>
+        </div>
+    </div>
+        <div class="container nouvelles" id="nouvelles">
+            <div class="row">
+                <div class="col-lg">
+                    <h2>Nouvelles</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam mollitia ratione repellendus reiciendis molestias? Doloribus quisquam ad beatae deleniti molestiae mollitia eaque veritatis corporis quae suscipit. Distinctio quas nemo quo..</p>
+                            <a href="#divNews" id="newsLink" data-toggle="modal" data-target="#modalNouvelles">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam mollitia ratione repellendus reiciendis molestias? Doloribus quisquam ad beatae deleniti molestiae mollitia eaque veritatis corporis quae suscipit. Distinctio quas nemo quo..</p>
+                            <a href="#divNews" id="newsLink" data-toggle="modal" data-target="#modalNouvelles">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam mollitia ratione repellendus reiciendis molestias? Doloribus quisquam ad beatae deleniti molestiae mollitia eaque veritatis corporis quae suscipit. Distinctio quas nemo quo..</p>
+                            <a href="#divNews" id="newsLink" data-toggle="modal" data-target="#modalNouvelles">Lire plus</a>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container footer">
+            <div class="row align-items-center">
+                <div class="col-lg-4 copyright">
+                    <img src="images/copyright.png" width="80px;">
+                    <p>Tous droits réservés</p>
+                </div>
+                <div class="col-lg-8">
+                    <label for="inscription" class="formInscription">Inscrivez-vous:</label>
+                    <input type="text" class="inscription" id="inscription">
+                    <a href="https://www.youtube.com/watch?v=b3Y6VOKoaDk"><img src="images/youtube.png" width="70px;"></a>
+                    <a href="https://www.facebook.com/groups/500377664149859/"><img src="images/facebook.png" width="60px;"></a>
+                    <a href="https://www.linkedin.com/company/35428638/"><img src="images/linkedin-logo.png" width="60px;"></a>
+                    <a href="https://bandcamp.com/gabrielorion"><img src="images/bandcamp.png" width="60px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal nouvelle -->
+    <div class="modal" id="modalNouvelles" tableindex="-1" aria-labelledby="modalNouvellessLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Nouvelles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor accusantium odio modi optio eum, odit ullam consequatur blanditiis minus repellendus ut esse officiis doloribus similique mollitia. Natus, accusantium debitis!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor accusantium odio modi optio eum, odit ullam consequatur blanditiis minus repellendus ut esse officiis doloribus similique mollitia. Natus, accusantium debitis!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor accusantium odio modi optio eum, odit ullam consequatur blanditiis minus repellendus ut esse officiis doloribus similique mollitia. Natus, accusantium debitis!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor accusantium odio modi optio eum, odit ullam consequatur blanditiis minus repellendus ut esse officiis doloribus similique mollitia. Natus, accusantium debitis!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor accusantium odio modi optio eum, odit ullam consequatur blanditiis minus repellendus ut esse officiis doloribus similique mollitia. Natus, accusantium debitis!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
